@@ -65,7 +65,7 @@ func init() {
 		panic(err)
 	}
 
-	fmt.Println("MongoDB successfully connected...")
+	fmt.Println("MongoDB connected...")
 
 	// Connect to Redis
 	redisclient = redis.NewClient(&redis.Options{
@@ -81,7 +81,7 @@ func init() {
 		panic(err)
 	}
 
-	fmt.Println("Redis client connected successfully...")
+	fmt.Println("Redis client connected ...")
 
 	// Collections
 	authCollection = mongoclient.Database("golang_mongodb").Collection("users")
